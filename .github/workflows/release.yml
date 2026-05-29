@@ -52,7 +52,7 @@ jobs:
       - name: Upload Artifacts to Workflow
         uses: actions/upload-artifact@v4
         with:
-          name: binaries-${{ matrix.os defiance }}-${{ matrix.arch }}
+          name: binaries-${{ matrix.os }}-${{ matrix.arch }}
           path: dist/*
           retention-days: 1
 
