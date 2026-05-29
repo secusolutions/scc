@@ -13,8 +13,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/secusolutions/scc/v3/processor"
 	jsoniter "github.com/json-iterator/go"
+	"github.com/secusolutions/scc/v3/processor"
 )
 
 const (

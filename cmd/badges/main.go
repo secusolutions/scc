@@ -17,10 +17,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/secusolutions/scc/v3/processor"
 	"github.com/boyter/simplecache"
 	jsoniter "github.com/json-iterator/go"
 	"github.com/rs/zerolog/log"
+	"github.com/secusolutions/scc/v3/processor"
 )
 
 var (
