@@ -14,9 +14,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/secusolutions/scc/v3/processor"
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"
+	"github.com/secusolutions/scc/v3/processor"
 )
 
 // mcpMu serializes MCP tool calls so concurrent requests
