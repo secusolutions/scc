@@ -241,7 +241,7 @@ if __name__ == '__main__':
     '''
     https://gitlab.com/esr/loccount.git
     https://bitbucket.org/grumdrig/pq-web.git
-    https://github.com/boyter/scc.git
+    https://github.com/secusolutions/scc.git
     '''
 
     print(format_count(100))

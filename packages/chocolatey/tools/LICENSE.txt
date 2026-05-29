@@ -1,4 +1,4 @@
-﻿From: https://github.com/boyter/scc/blob/master/LICENSE
+﻿From: https://github.com/secusolutions/scc/blob/master/LICENSE
 
 MIT License
 

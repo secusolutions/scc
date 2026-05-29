@@ -158,7 +158,7 @@ func toCSVFiles(input chan *FileJob) string {
 }
 
 // For very large repositories CSV stream can be used which prints results out as they come in
-// with the express idea of lowering memory usage, see https://github.com/boyter/scc/issues/210 for
+// with the express idea of lowering memory usage, see https://github.com/secusolutions/scc/issues/210 for
 // the background on why this might be needed
 func toCSVStream(input chan *FileJob) string {
 	fmt.Println("Language,Provider,Filename,Lines,Code,Comments,Blanks,Complexity,Bytes,Uloc")

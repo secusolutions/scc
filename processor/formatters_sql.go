@@ -99,7 +99,7 @@ func escapeSQLString(input string) string {
 func toSql(input chan *FileJob) string {
 	var str strings.Builder
 
-	str.WriteString(`create table metadata (   -- github.com/boyter/scc v ` + Version + `
+	str.WriteString(`create table metadata (   -- github.com/secusolutions/scc v ` + Version + `
              timestamp text,
              Project   text,
              elapsed_s real,

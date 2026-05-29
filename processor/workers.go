@@ -299,7 +299,7 @@ func codeState(
 	langFeatures LanguageFeature,
 	digest *hash.Hash,
 ) (int, int64, []byte, [][]byte, bool) {
-	// Hacky fix to https://github.com/boyter/scc/issues/181
+	// Hacky fix to https://github.com/secusolutions/scc/issues/181
 	if endPoint > len(fileJob.Content) {
 		endPoint--
 	}
@@ -737,7 +737,7 @@ func CountStats(fileJob *FileJob) {
 		}
 	}
 
-	// check if 0 as well to avoid divide by zero https://github.com/boyter/scc/issues/223
+	// check if 0 as well to avoid divide by zero https://github.com/secusolutions/scc/issues/223
 	if !isGenerated && Minified && fileJob.Lines != 0 {
 		avgLineByteCount := len(fileJob.Content) / int(fileJob.Lines)
 		minifiedGeneratedCheck(avgLineByteCount, fileJob)

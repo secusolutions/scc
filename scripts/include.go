@@ -13,7 +13,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/boyter/scc/v3/processor"
+	"github.com/secusolutions/scc/v3/processor"
 	jsoniter "github.com/json-iterator/go"
 )
 

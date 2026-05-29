@@ -32,8 +32,8 @@ const (
 type Quote struct {
 	Start        string `json:"start"`
 	End          string `json:"end"`
-	IgnoreEscape bool   `json:"ignoreEscape"` // To enable turning off the \ check for C# @"\" string examples https://github.com/boyter/scc/issues/71
-	DocString    bool   `json:"docString"`    // To enable docstring check for Python where "If the triple quote string starts following a newline with only white-space characters in front and ends followed by only a newline or white-space characters it is a comment" https://github.com/boyter/scc/issues/62
+	IgnoreEscape bool   `json:"ignoreEscape"` // To enable turning off the \ check for C# @"\" string examples https://github.com/secusolutions/scc/issues/71
+	DocString    bool   `json:"docString"`    // To enable docstring check for Python where "If the triple quote string starts following a newline with only white-space characters in front and ends followed by only a newline or white-space characters it is a comment" https://github.com/secusolutions/scc/issues/62
 }
 
 // Language is a struct which contains the values for each language stored in languages.json

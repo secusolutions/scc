@@ -1,6 +1,6 @@
 /*
    Constants and macro definitions for the program
-   https://github.com/boyter/scc/issues/484
+   https://github.com/secusolutions/scc/issues/484
 */
 
 // Define a constant for the number to calculate factorial

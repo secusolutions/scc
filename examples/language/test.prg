@@ -2,7 +2,7 @@
    This program demonstrates the calculation
    of the factorial of a number using a function.
 
-   https://github.com/boyter/scc/issues/484
+   https://github.com/secusolutions/scc/issues/484
 */
 
 FUNCTION Factorial( n )

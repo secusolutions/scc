@@ -67,7 +67,7 @@ func TestNoGitIgnore(t *testing.T) {
 
 func TestIssue82(t *testing.T) {
 	t.Parallel()
-	// Regression issue https://github.com/boyter/scc/issues/82
+	// Regression issue https://github.com/secusolutions/scc/issues/82
 	output1, err := runSCC(".")
 	if err != nil {
 		t.Fatal(err)
@@ -89,7 +89,7 @@ func TestIssue82(t *testing.T) {
 
 func TestIncludeExt(t *testing.T) {
 	t.Parallel()
-	// Regression issue https://github.com/boyter/scc/issues/108
+	// Regression issue https://github.com/secusolutions/scc/issues/108
 	output, err := runSCC("--include-ext", "go", "examples/language")
 	if err != nil {
 		t.Fatal(err)
@@ -101,7 +101,7 @@ func TestIncludeExt(t *testing.T) {
 
 func TestIssue115(t *testing.T) {
 	t.Parallel()
-	// Regression issue https://github.com/boyter/scc/issues/115
+	// Regression issue https://github.com/secusolutions/scc/issues/115
 	output, err := runSCC("examples/issue115/.test/file")
 	if err != nil {
 		t.Fatal(err)
@@ -113,7 +113,7 @@ func TestIssue115(t *testing.T) {
 
 func TestIssue120(t *testing.T) {
 	t.Parallel()
-	// Regression issue https://github.com/boyter/scc/issues/120
+	// Regression issue https://github.com/secusolutions/scc/issues/120
 	output, err := runSCC("-i", "java", "./examples/issue120")
 	if err != nil {
 		t.Fatal(err)
@@ -125,7 +125,7 @@ func TestIssue120(t *testing.T) {
 
 func TestIssue152(t *testing.T) {
 	t.Parallel()
-	// Regression issue https://github.com/boyter/scc/issues/152
+	// Regression issue https://github.com/secusolutions/scc/issues/152
 	output, err := runSCC("-i", "css", "./examples/issue152/")
 	if err != nil {
 		t.Fatal(err)
@@ -136,7 +136,7 @@ func TestIssue152(t *testing.T) {
 }
 
 func TestIssue250(t *testing.T) {
-	// Regression issue https://github.com/boyter/scc/issues/250
+	// Regression issue https://github.com/secusolutions/scc/issues/250
 	output1, err := runSCC("--exclude-dir", "examples/")
 	if err != nil {
 		t.Fatal(err)
@@ -152,7 +152,7 @@ func TestIssue250(t *testing.T) {
 }
 
 func TestIssue259(t *testing.T) {
-	// Regression issue https://github.com/boyter/scc/issues/259
+	// Regression issue https://github.com/secusolutions/scc/issues/259
 	output, err := runSCC("-f", "csv", "--exclude-ext", "go")
 	if err != nil {
 		t.Fatal(err)
@@ -165,7 +165,7 @@ func TestIssue259(t *testing.T) {
 
 func TestIssue260(t *testing.T) {
 	t.Parallel()
-	// Regression issue https://github.com/boyter/scc/issues/260
+	// Regression issue https://github.com/secusolutions/scc/issues/260
 	_, err := runSCC("-d", "examples/issue260/")
 	if err != nil {
 		t.Fatalf("duplicate empty crash: %v", err)
@@ -174,7 +174,7 @@ func TestIssue260(t *testing.T) {
 
 func TestIssue345(t *testing.T) {
 	t.Parallel()
-	// Regression issue https://github.com/boyter/scc/issues/345
+	// Regression issue https://github.com/secusolutions/scc/issues/345
 	const expectedOutput = "C++,4,3,1,0,0,76,1,0"
 	output, err := runSCC("-f", "csv", "--no-scc-ignore", "examples/issue345/")
 	if err != nil {
@@ -191,7 +191,7 @@ func TestIssue345(t *testing.T) {
 
 func TestIssue379(t *testing.T) {
 	t.Parallel()
-	// Regression issue https://github.com/boyter/scc/issues/379
+	// Regression issue https://github.com/secusolutions/scc/issues/379
 	const expectedOutput = "Python,7,4,2,1,1,83,1,0"
 	output, err := runSCC("-f", "csv", "--no-scc-ignore", "examples/issue379/")
 	if err != nil {
@@ -208,7 +208,7 @@ func TestIssue379(t *testing.T) {
 
 func TestIssue457(t *testing.T) {
 	t.Parallel()
-	// Regression issue https://github.com/boyter/scc/issues/457
+	// Regression issue https://github.com/secusolutions/scc/issues/457
 	output, err := runSCC("-M", ".*")
 	if err != nil {
 		t.Fatal(err)
@@ -220,7 +220,7 @@ func TestIssue457(t *testing.T) {
 
 func TestIssue564(t *testing.T) {
 	t.Parallel()
-	// Regression issue https://github.com/boyter/scc/issues/564
+	// Regression issue https://github.com/secusolutions/scc/issues/564
 	const expectedPythonOutput = "Python,3,3,0,0,0,84,3,0"
 	const expectedGoOutput = "Go,6,4,0,2,0,58,2,0"
 	output, err := runSCC("-f", "csv", "--no-scc-ignore", "examples/issue564/")
@@ -241,7 +241,7 @@ func TestIssue564(t *testing.T) {
 
 func TestIssue610(t *testing.T) {
 	t.Parallel()
-	// Regression issue https://github.com/boyter/scc/issues/610
+	// Regression issue https://github.com/secusolutions/scc/issues/610
 	const expectedOutput = "TypeScript,11,7,2,2,1,214,1,0"
 	output, err := runSCC("-f", "csv", "--no-scc-ignore", "examples/issue610/")
 	if err != nil {
@@ -258,7 +258,7 @@ func TestIssue610(t *testing.T) {
 
 func TestIssue339(t *testing.T) {
 	t.Parallel()
-	// Regression issue https://github.com/boyter/scc/issues/339
+	// Regression issue https://github.com/secusolutions/scc/issues/339
 	output, err := runSCC("-f", "csv", "--no-scc-ignore", "examples/issue339/")
 	if err != nil {
 		t.Fatal(err)
@@ -345,7 +345,7 @@ func TestFormatSQL(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if !strings.Contains(output, "create table metadata (   -- github.com/boyter/scc") {
+	if !strings.Contains(output, "create table metadata (   -- github.com/secusolutions/scc") {
 		t.Fatalf("sql format test failed, output:\n%s", output)
 	}
 }

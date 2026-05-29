@@ -4,7 +4,7 @@ package processor
 
 import "testing"
 
-// https://github.com/boyter/scc/issues/72
+// https://github.com/secusolutions/scc/issues/72
 // Turns out the above is due to BOM being present for that file
 func TestCountStatsIssue72(t *testing.T) {
 	ProcessConstants()
@@ -80,7 +80,7 @@ var MyString = ` + "`\\`" + `
 	}
 }
 
-// https://github.com/boyter/scc/issues/62
+// https://github.com/secusolutions/scc/issues/62
 func TestCountStatsIssue62(t *testing.T) {
 	ProcessConstants()
 	fileJob := FileJob{

@@ -102,7 +102,7 @@ func toClocYAML(input chan *FileJob) string {
 	es := float64(makeTimestampMilli()-startTimeMilli) * float64(0.001)
 
 	header := headerStruct{
-		Url:            "https://github.com/boyter/scc/",
+		Url:            "https://github.com/secusolutions/scc/",
 		Version:        Version,
 		NFiles:         sumFiles,
 		NLines:         sumLines,
@@ -126,7 +126,7 @@ func toClocYAML(input chan *FileJob) string {
 	reportYaml, _ := yaml.Marshal(reportStart)
 	sumYaml, _ := yaml.Marshal(reportEnd)
 	languageYaml, _ := yaml.Marshal(langs)
-	yamlString := "# https://github.com/boyter/scc/\n" + string(reportYaml) + string(languageYaml) + string(sumYaml)
+	yamlString := "# https://github.com/secusolutions/scc/\n" + string(reportYaml) + string(languageYaml) + string(sumYaml)
 
 	printDebugF("milliseconds to build formatted string: %d", makeTimestampMilli()-startTime)
 

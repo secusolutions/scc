@@ -31,49 +31,49 @@ install_scc_tar() {
 
 # v1.x zip releases
 ZIP_VERSIONS=(
-    "1.0.0 https://github.com/boyter/scc/releases/download/v1.0.0/scc-1.0.0-x86_64-unknown-linux.zip"
-    "1.1.0 https://github.com/boyter/scc/releases/download/v1.1.0/scc-1.1.0-x86_64-unknown-linux.zip"
-    "1.2.0 https://github.com/boyter/scc/releases/download/v1.2.0/scc-1.2.0-x86_64-unknown-linux.zip"
-    "1.3.0 https://github.com/boyter/scc/releases/download/untagged-928286b8064e2cf6dd35/scc-1.3.0-x86_64-unknown-linux.zip"
-    "1.4.0 https://github.com/boyter/scc/releases/download/v1.4.0/scc-1.4.0-x86_64-unknown-linux.zip"
-    "1.5.0 https://github.com/boyter/scc/releases/download/v1.5.0/scc-1.5.0-x86_64-unknown-linux.zip"
-    "1.6.0 https://github.com/boyter/scc/releases/download/v1.6.0/scc-1.6.0-x86_64-unknown-linux.zip"
-    "1.7.0 https://github.com/boyter/scc/releases/download/v1.7.0/scc-1.7.0-x86_64-unknown-linux.zip"
-    "1.8.0 https://github.com/boyter/scc/releases/download/v1.8.0/scc-1.8.0-x86_64-unknown-linux.zip"
-    "1.9.0 https://github.com/boyter/scc/releases/download/v1.9.0/scc-1.9.0-x86_64-unknown-linux.zip"
-    "1.10.0 https://github.com/boyter/scc/releases/download/v1.10.0/scc-1.0.0-x86_64-unknown-linux.zip"
-    "1.11.0 https://github.com/boyter/scc/releases/download/v1.11.0/scc-1.11.0-x86_64-unknown-linux.zip"
-    "1.12.0 https://github.com/boyter/scc/releases/download/v1.12.0/scc-1.12.0-x86_64-unknown-linux.zip"
-    "1.12.1 https://github.com/boyter/scc/releases/download/v1.12.1/scc-1.12.1-x86_64-unknown-linux.zip"
+    "1.0.0 https://github.com/secusolutions/scc/releases/download/v1.0.0/scc-1.0.0-x86_64-unknown-linux.zip"
+    "1.1.0 https://github.com/secusolutions/scc/releases/download/v1.1.0/scc-1.1.0-x86_64-unknown-linux.zip"
+    "1.2.0 https://github.com/secusolutions/scc/releases/download/v1.2.0/scc-1.2.0-x86_64-unknown-linux.zip"
+    "1.3.0 https://github.com/secusolutions/scc/releases/download/untagged-928286b8064e2cf6dd35/scc-1.3.0-x86_64-unknown-linux.zip"
+    "1.4.0 https://github.com/secusolutions/scc/releases/download/v1.4.0/scc-1.4.0-x86_64-unknown-linux.zip"
+    "1.5.0 https://github.com/secusolutions/scc/releases/download/v1.5.0/scc-1.5.0-x86_64-unknown-linux.zip"
+    "1.6.0 https://github.com/secusolutions/scc/releases/download/v1.6.0/scc-1.6.0-x86_64-unknown-linux.zip"
+    "1.7.0 https://github.com/secusolutions/scc/releases/download/v1.7.0/scc-1.7.0-x86_64-unknown-linux.zip"
+    "1.8.0 https://github.com/secusolutions/scc/releases/download/v1.8.0/scc-1.8.0-x86_64-unknown-linux.zip"
+    "1.9.0 https://github.com/secusolutions/scc/releases/download/v1.9.0/scc-1.9.0-x86_64-unknown-linux.zip"
+    "1.10.0 https://github.com/secusolutions/scc/releases/download/v1.10.0/scc-1.0.0-x86_64-unknown-linux.zip"
+    "1.11.0 https://github.com/secusolutions/scc/releases/download/v1.11.0/scc-1.11.0-x86_64-unknown-linux.zip"
+    "1.12.0 https://github.com/secusolutions/scc/releases/download/v1.12.0/scc-1.12.0-x86_64-unknown-linux.zip"
+    "1.12.1 https://github.com/secusolutions/scc/releases/download/v1.12.1/scc-1.12.1-x86_64-unknown-linux.zip"
 )
 
 # v2.x zip releases
 ZIP_VERSIONS+=(
-    "2.0.0 https://github.com/boyter/scc/releases/download/v2.0.0/scc-2.0.0-x86_64-unknown-linux.zip"
-    "2.1.0 https://github.com/boyter/scc/releases/download/v2.1.0/scc-2.1.0-x86_64-unknown-linux.zip"
-    "2.2.0 https://github.com/boyter/scc/releases/download/v2.2.0/scc-2.2.0-x86_64-unknown-linux.zip"
-    "2.3.0 https://github.com/boyter/scc/releases/download/v2.3.0/scc-2.3.0-x86_64-unknown-linux.zip"
-    "2.4.0 https://github.com/boyter/scc/releases/download/v2.4.0/scc-2.4.0-x86_64-unknown-linux.zip"
-    "2.5.0 https://github.com/boyter/scc/releases/download/v2.5.0/scc-2.5.0-x86_64-unknown-linux.zip"
-    "2.6.0 https://github.com/boyter/scc/releases/download/v2.6.0/scc-2.6.0-x86_64-unknown-linux.zip"
-    "2.7.0 https://github.com/boyter/scc/releases/download/v2.7.0/scc-2.7.0-x86_64-unknown-linux.zip"
-    "2.8.0 https://github.com/boyter/scc/releases/download/v2.8.0/scc-2.8.0-x86_64-unknown-linux.zip"
-    "2.9.0 https://github.com/boyter/scc/releases/download/v2.9.0/scc-2.9.0-x86_64-unknown-linux.zip"
-    "2.9.1 https://github.com/boyter/scc/releases/download/v2.9.1/scc-2.9.1-x86_64-unknown-linux.zip"
-    "2.10.0 https://github.com/boyter/scc/releases/download/v2.10.0/scc-2.10.0-x86_64-unknown-linux.zip"
-    "2.11.0 https://github.com/boyter/scc/releases/download/v2.11.0/scc-2.11.0-x86_64-unknown-linux.zip"
-    "2.12.0 https://github.com/boyter/scc/releases/download/v2.12.0/scc-2.12.0-x86_64-unknown-linux.zip"
-    "2.13.0 https://github.com/boyter/scc/releases/download/v2.13.0/scc-2.13.0-x86_64-unknown-linux.zip"
+    "2.0.0 https://github.com/secusolutions/scc/releases/download/v2.0.0/scc-2.0.0-x86_64-unknown-linux.zip"
+    "2.1.0 https://github.com/secusolutions/scc/releases/download/v2.1.0/scc-2.1.0-x86_64-unknown-linux.zip"
+    "2.2.0 https://github.com/secusolutions/scc/releases/download/v2.2.0/scc-2.2.0-x86_64-unknown-linux.zip"
+    "2.3.0 https://github.com/secusolutions/scc/releases/download/v2.3.0/scc-2.3.0-x86_64-unknown-linux.zip"
+    "2.4.0 https://github.com/secusolutions/scc/releases/download/v2.4.0/scc-2.4.0-x86_64-unknown-linux.zip"
+    "2.5.0 https://github.com/secusolutions/scc/releases/download/v2.5.0/scc-2.5.0-x86_64-unknown-linux.zip"
+    "2.6.0 https://github.com/secusolutions/scc/releases/download/v2.6.0/scc-2.6.0-x86_64-unknown-linux.zip"
+    "2.7.0 https://github.com/secusolutions/scc/releases/download/v2.7.0/scc-2.7.0-x86_64-unknown-linux.zip"
+    "2.8.0 https://github.com/secusolutions/scc/releases/download/v2.8.0/scc-2.8.0-x86_64-unknown-linux.zip"
+    "2.9.0 https://github.com/secusolutions/scc/releases/download/v2.9.0/scc-2.9.0-x86_64-unknown-linux.zip"
+    "2.9.1 https://github.com/secusolutions/scc/releases/download/v2.9.1/scc-2.9.1-x86_64-unknown-linux.zip"
+    "2.10.0 https://github.com/secusolutions/scc/releases/download/v2.10.0/scc-2.10.0-x86_64-unknown-linux.zip"
+    "2.11.0 https://github.com/secusolutions/scc/releases/download/v2.11.0/scc-2.11.0-x86_64-unknown-linux.zip"
+    "2.12.0 https://github.com/secusolutions/scc/releases/download/v2.12.0/scc-2.12.0-x86_64-unknown-linux.zip"
+    "2.13.0 https://github.com/secusolutions/scc/releases/download/v2.13.0/scc-2.13.0-x86_64-unknown-linux.zip"
 )
 
 # v3.0.0 is a zip
 ZIP_VERSIONS+=(
-    "3.0.0 https://github.com/boyter/scc/releases/download/v3.0.0/scc-3.0.0-x86_64-unknown-linux.zip"
+    "3.0.0 https://github.com/secusolutions/scc/releases/download/v3.0.0/scc-3.0.0-x86_64-unknown-linux.zip"
 )
 
 # v3.1.0 has a versioned tar name
 TAR_VERSIONS=(
-    "3.1.0 https://github.com/boyter/scc/releases/download/v3.1.0/scc_3.1.0_Linux_x86_64.tar.gz"
+    "3.1.0 https://github.com/secusolutions/scc/releases/download/v3.1.0/scc_3.1.0_Linux_x86_64.tar.gz"
 )
 
 # v3.2.0+ use the generic tar name
@@ -95,7 +95,7 @@ done
 
 # Install generic-named tar versions
 for version in "${GENERIC_TAR_VERSIONS[@]}"; do
-    install_scc_tar "$version" "https://github.com/boyter/scc/releases/download/v${version}/scc_Linux_x86_64.tar.gz"
+    install_scc_tar "$version" "https://github.com/secusolutions/scc/releases/download/v${version}/scc_Linux_x86_64.tar.gz"
 done
 
 # Make the latest version available as just 'scc'

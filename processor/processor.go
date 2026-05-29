@@ -329,7 +329,7 @@ var LanguageFeaturesMutex = sync.Mutex{}
 var startTimeMilli = makeTimestampMilli()
 
 // ConfigureGc needs to be set outside of ProcessConstants because it should only be enabled in command line
-// mode https://github.com/boyter/scc/issues/32
+// mode https://github.com/secusolutions/scc/issues/32
 func ConfigureGc() {
 	gcPercent = debug.SetGCPercent(gcPercent)
 }
@@ -401,7 +401,7 @@ func ProcessConstants() {
 		printTrace("configured to lazy load language features")
 	}
 
-	// Fix for https://github.com/boyter/scc/issues/250
+	// Fix for https://github.com/secusolutions/scc/issues/250
 	fixedPath := make([]string, 0, len(PathDenyList))
 	for _, path := range PathDenyList {
 		fixedPath = append(fixedPath, strings.TrimRight(path, "/"))

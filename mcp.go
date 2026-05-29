@@ -14,7 +14,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/boyter/scc/v3/processor"
+	"github.com/secusolutions/scc/v3/processor"
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"
 )

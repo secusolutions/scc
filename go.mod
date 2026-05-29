@@ -1,4 +1,4 @@
-module github.com/boyter/scc/v3
+module github.com/secusolutions/scc/v3
 
 go 1.25.2
 

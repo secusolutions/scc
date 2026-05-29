@@ -17,7 +17,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/boyter/scc/v3/processor"
+	"github.com/secusolutions/scc/v3/processor"
 	"github.com/boyter/simplecache"
 	jsoniter "github.com/json-iterator/go"
 	"github.com/rs/zerolog/log"
@@ -57,7 +57,7 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		loc, err := processUrlPath(r.URL.Path)
 		if err != nil {
-			http.Redirect(w, r, "https://github.com/boyter/scc/?tab=readme-ov-file#badges-beta", http.StatusTemporaryRedirect)
+			http.Redirect(w, r, "https://github.com/secusolutions/scc/?tab=readme-ov-file#badges-beta", http.StatusTemporaryRedirect)
 			return
 		}
 
